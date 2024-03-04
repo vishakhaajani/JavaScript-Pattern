@@ -1,179 +1,288 @@
-<script type="text/javascript">
+<!DOCTYPE html>
+<html lang="en">
 
-    //0
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #zero {
+            color: green;
+        }
+
+        #one {
+            color: blue;
+        }
+
+        #two {
+            color: rgb(20, 191, 203);
+        }
+
+        #three {
+            color: rgb(151, 156, 26);
+        }
+
+        #four {
+            color: rgb(255, 51, 0);
+        }
+
+        #five {
+            color: rgb(0, 255, 55);
+        }
+
+        #six {
+            color: rgb(255, 0, 225);
+        }
+
+        #seven {
+            color: rgb(255, 0, 72);
+        }
+
+        #eight {
+            color: rgb(217, 0, 255);
+        }
+
+        #nine {
+            color: rgb(153, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        //0
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 1 || i == 5 || j == 1 || j == 5) {
+                    document.write(`<span id="zero">* </span>`);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        // 1
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if ((i == 1 && j == 1) || (i == 1 && j == 2) || i == 5 || j == 3) {
+                    document.write(`<span id="one">* </span>`);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        // 2
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 5 || (i == 2 && j == 1) || (i == 1 && j == 2) || (i == 1 && j == 3) || (i == 1 && j == 4) || (i == 2 && j == 5) || (i == 3 && j == 4) || (i == 4 && j == 3)) {
+                    document.write(`<span id="two">* </span>`);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        // 3
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if ((i == 2 && j == 1) || (i == 1 && j == 2) || (i == 1 && j == 3) || (i == 1 && j == 4) || (i == 2 && j == 5) || (i == 3 && j == 5) || (i == 3 && j == 4) || (i == 3 && j == 3) || (i == 4 && j == 5) || (i == 5 && j == 4) || (i == 5 && j == 3) || (i == 5 && j == 2) || (i == 4 && j == 1)) {
+                    document.write(`<span id="three">* </span> `);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        // 4
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if ((i == 1 && j == 1) || (i == 2 && j == 1) || i == 3 || j == 5) {
+                    document.write(`<span id="four">* </span> `);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        //5 
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 1 || i == 3 || i == 5 || (j == 1 && i == 2) || (j == 5 && i == 4)) {
+                    document.write(`<span id="five">* </span> `);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        //6
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 5 || i == 1 || j == 1 || i == 3 || (i == 4 && j == 5)) {
+                    document.write(`<span id="six">* </span> `);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        //7
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 1 || (i == 2 && j == 4) || (i == 3 && j == 3) || (i == 4 && j == 2) || (i == 5 && j == 1)) {
+                    document.write(`<span id="seven">* </span> `);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        //8
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 1 || i == 3 || i == 5 || j == 1 || j == 5) {
+                    document.write(`<span id="eight">* </span> `);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        //9
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 3 || i == 1 || j == 5 || i == 5 || (i == 2 && j == 1)) {
+                    document.write(`<span id="nine">* </span> `);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+
+    // *
+    // **
+    // ***
+    // ****
+    // *****
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (j==1 || i==5 || (i==4 && (j==2 || j==3 || j==4)) || (i==3 && (j==2 || j==3)) || (i==2 && (j==2)) ) {
+                    document.write(`<span id="two">* </span>`);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
+            }
+            document.write(`<br>`);
+        }
+
+
+        document.write(`<br>`);
+        document.write(`<br>`);
+        document.write(`<br>`);
+
+
+
+    // *****
+    // ****
+    // ***
+    // **
+    // *
 
     for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if (i==1 || i==5 || j==1 || j==5) {
-                document.write(`* `);
+            for (let j = 1; j <= 5; j++) {
+                if (i==1 || j==1 || (i==4 && (j==2)) || (i==3 && (j==2 || j==3)) || (i==2 && (j==2 || j==3 || j==4)) ) {
+                    document.write(`<span id="two">* </span>`);
+                }
+                else {
+                    document.write(`&nbsp&nbsp&nbsp`);
+                }
             }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
+            document.write(`<br>`);
         }
+
         document.write(`<br>`);
-    }
-
-    document.write(`<br>`);
-    document.write(`<br>`);
-    document.write(`<br>`);
-
-    // 1
-
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if ((i == 1 && j == 1) || (i == 1 && j == 2) || i == 5 || j == 3) {
-                document.write(`* `);
-            }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
-        }
         document.write(`<br>`);
-    }
-
-    document.write(`<br>`);
-    document.write(`<br>`);
-    document.write(`<br>`);
-
-    // 2
-
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if (i==5 || (i==2 && j==1) || (i==1 && j==2) || (i==1 && j==3) || (i==1 && j==4) || (i==2 && j==5) || (i==3 && j==4) || (i==4 && j==3)) {
-                document.write(`* `);
-            }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
-        }
         document.write(`<br>`);
-    }
 
-    document.write(`<br>`);
-    document.write(`<br>`);
-    document.write(`<br>`);
 
-    // 3
 
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if ((i==2 && j==1) || (i==1 && j==2) || (i==1 && j==3) || (i==1 && j==4) || (i==2 && j==5) || (i==3 && j==5) || (i==3 && j==4) || (i==3 && j==3) || (i==4 && j==5) || (i==5 && j==4) || (i==5 && j==3) || (i==5 && j==2) || (i==4 && j==1)) {
-                document.write(`* `);
-            }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
-        }
-        document.write(`<br>`);
-    }
 
-    document.write(`<br>`);
-    document.write(`<br>`);
-    document.write(`<br>`);
+    </script>
+</body>
 
-    // 4
-
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if ((i==1 && j==1) || (i==2 && j==1) || i==3 || j==5) {
-                document.write(`* `);
-            }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
-        }
-        document.write(`<br>`);
-    }
-
-    //5 
-
-    document.write(`<br>`);
-    document.write(`<br>`);
-    document.write(`<br>`);
-
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if (i==1 || i==3 || i==5 || (j==1 && i==2) || (j==5 && i==4)) {
-                document.write(`* `);
-            }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
-        }
-        document.write(`<br>`);
-    }
-
-    //6
-
-    document.write(`<br>`);
-    document.write(`<br>`);
-    document.write(`<br>`);
-
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if (i==5 || i==1 || j==1 || i==3 || (i==4 && j==5)) {
-                document.write(`* `);
-            }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
-        }
-        document.write(`<br>`);
-    }
-
-    //7
-
-    document.write(`<br>`);
-    document.write(`<br>`);
-    document.write(`<br>`);
-
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if (i==1 || (i==2 && j==4) || (i==3 && j==3) || (i==4 && j==2) || (i==5 && j==1)) {
-                document.write(`* `);
-            }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
-        }
-        document.write(`<br>`);
-    }
-
-    //8
-
-    document.write(`<br>`);
-    document.write(`<br>`);
-    document.write(`<br>`);
-
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if (i==1 || i==3 || i==5 || j==1 || j==5) {
-                document.write(`* `);
-            }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
-        }
-        document.write(`<br>`);
-    }
-
-    //9
-
-    document.write(`<br>`);
-    document.write(`<br>`);
-    document.write(`<br>`);
-
-    for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if (i==3 || i==1 || j==5 || i==5 || (i==2 && j==1)) {
-                document.write(`* `);
-            }
-            else {
-                document.write(`&nbsp&nbsp&nbsp`);
-            }
-        }
-        document.write(`<br>`);
-    }
-
-</script>
+</html>
